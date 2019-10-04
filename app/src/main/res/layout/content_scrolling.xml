@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sydneyhide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/sydney"
+                android:layout_width="190dp"
+                android:layout_height="127dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="sydneybClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sydney" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sydneytxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FDF2E9"
+                    android:text=" Sydney"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/sydneyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#FDF2E9"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newyorkhide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/newyork"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="newyorkbClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/newyork" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newyorktxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FCE6D3"
+                    android:text=" New York"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/newyorkTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#FCE6D3"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    android:timeZone="GMT-0400"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tokyohide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/tokyo"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="tokyobClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/tokyo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tokyotxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FBD9BD"
+                    android:text=" Tokyo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/tokyoTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#FBD9BD"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hanoihide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hanoi"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="hanoibClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/hanoi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/hanoitxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f9cda8"
+                    android:text=" Hanoi"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/hanoiTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#f9cda8"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/londonhide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/london"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="londonbClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/london"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/londontxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f8c192"
+                    android:text=" London"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/londonTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#f8c192"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seoulhide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/seoul"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="seoulbClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/seoul" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seoultxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f7b47c"
+                    android:text=" Seoul"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/seoulTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#f7b47c"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dubaihide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dubai"
+                android:layout_width="381dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@color/colorAccent"
+                android:onClick="dubaibClicked"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/dubai" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dubaitxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f5a867"
+                    android:text=" Dubai"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="40dp"
+                    app:fontFamily="@font/leckerli_one" />
+
+                <TextView
+                    android:id="@+id/dubaiTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:background="#f5a867"
+                    android:textColor="#FFA500"
+                    android:textSize="25dp"
+                    app:fontFamily="@font/karla_bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/space10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
